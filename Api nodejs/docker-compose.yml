@@ -1,0 +1,14 @@
+
+
+services:
+  payment_backend:
+    container_name: payment_backend
+    build: 
+      context: "./"
+      dockerfile: dockerfile
+
+    volumes:
+     - .:/app
+
+    ports:
+      - 3000:3000
